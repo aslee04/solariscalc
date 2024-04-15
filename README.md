@@ -1,0 +1,2 @@
+# solariscalc
+Учим jQuery
