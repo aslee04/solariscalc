@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>09 - Учим jQuery</title>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<a href="http://webcademy.ru" target="_blank">
+			<img src="http://webcademy.ru/img/logo/logo.svg" alt="Логотип" class="logo" />
+		</a>
+
+		<div id="imgHolder" class="imgHolder">
+			<img src="img/black.png" alt="Автомобиль" />
+
+			<div class="model-summary">
+				<div class="model-name">Hundai Solaris</div>
+				<div class="model-specs" id="modelSpecs"></div>
+				<div class="model-price" id="modelPrice"></div>
+				<div class="model-price" id="modelPriceUSD"></div>
+				<div class="button">Заказать</div>
+			</div>
+		</div>
+
+		<form id="autoForm">
+			<h2>Настрой авто для себя</h2>
+			<div class="row">
+				<!-- col-1-of-3 -->
+				<div class="col-1-of-3" id="engine">
+					<h4>Двигатель</h4>
+					<div class="form-block">
+						<input type="radio" name="engine" id="engine1400" value="624900" checked />
+						<label for="engine1400">1.4 л (100 л.с.)</label>
+					</div>
+					<div class="form-block">
+						<input type="radio" name="engine" id="engine1600" value="749900" />
+						<label for="engine1600">1.6 л (123 л.с.)</label>
+					</div>
+				</div>
+				<!-- // col-1-of-3 -->
+				<!-- col-1-of-3 -->
+				<div class="col-1-of-3">
+					<h4>Коробка передач</h4>
+
+					<div class="form-block">
+						<input
+							type="radio"
+							name="transmission"
+							id="transmission6MT"
+							value="0"
+							checked
+						/>
+						<label for="transmission6MT">Ручная, 6 ступеней (6 MT)</label>
+					</div>
+
+					<div class="form-block">
+						<input
+							type="radio"
+							name="transmission"
+							id="transmission6AT"
+							value="125000"
+						/>
+						<label for="transmission6AT">Автомат, 6 ступеней (6 AT)</label>
+					</div>
+				</div>
+				<!-- // col-1-of-3 -->
+				<!-- col-1-of-3 -->
+				<div class="col-1-of-3">
+					<h4>Пакет (дополнительные опции)</h4>
+
+					<div class="form-block">
+						<input type="radio" name="package" id="packageActive" value="0" checked />
+						<label for="packageActive">Active</label>
+					</div>
+					<div class="form-block">
+						<input type="radio" name="package" id="packageActivePlus" value="85000" />
+						<label for="packageActivePlus">Active Plus (кондиционер)</label>
+					</div>
+					<div class="form-block">
+						<input type="radio" name="package" id="packageComfort" value="130000" />
+						<label for="packageComfort">Comfort (климатконтроль)</label>
+					</div>
+				</div>
+				<!-- // col-1-of-3 -->
+			</div>
+
+			<h4>Цвет</h4>
+			<div class="form-block">
+				<div id="colorsSelector" class="colorsSelector">
+					<button
+						type="button"
+						class="colorItem colorBlue"
+						data-img-path="img/blue.png"
+					></button>
+					<button
+						type="button"
+						class="colorItem colorWhite"
+						data-img-path="img/white.png"
+					></button>
+					<button
+						type="button"
+						class="colorItem colorRed"
+						data-img-path="img/red.png"
+					></button>
+					<button
+						type="button"
+						class="colorItem colorBlack"
+						data-img-path="img/black.png"
+					></button>
+					<button
+						type="button"
+						class="colorItem colorWhitePure"
+						data-img-path="img/white-pure.png"
+					></button>
+					<button
+						type="button"
+						class="colorItem colorOrange"
+						data-img-path="img/orange.png"
+					></button>
+					<button
+						type="button"
+						class="colorItem colorGraphite"
+						data-img-path="img/graphite.png"
+					></button>
+				</div>
+			</div>
+		</form>
+
+		<script src="libs/jquery-3.6.0.min.js"></script>
+
+        <script src="./js/colors.js"></script>
+
+        <script src="./js/model-info.js"></script>
+
+        <script src="./js/price.js"></script>
+
+		<script src="./js/dollar.js"></script>
+	</body>
+</html>

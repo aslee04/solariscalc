@@ -1,0 +1,241 @@
+body {
+	padding: 20px;
+	font-size: 16px;
+}
+.logo {
+	height: 60px;
+}
+li {
+	margin-bottom: 10px;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.form-block {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.imgHolder {
+	background-image: url('../img/text-solaris.png');
+	background-position: center 50px;
+	background-repeat: no-repeat;
+	/*background-size: contain;*/
+	/*background-size: 100%;*/
+	text-align: center;
+}
+
+.imgHolder img {
+	max-width: 100%;
+}
+
+.colorsSelector {
+	text-align: left;
+}
+
+label {
+	cursor: pointer;
+}
+
+.colorItem {
+    border-radius: 50%;
+	border: none;
+    width: 50px;
+    height: 50px;
+    background-color: #999;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.colorBlue {
+	background-color: #325488;
+}
+
+.colorWhite {
+    background-color: #cfcfcf;
+}
+
+.colorRed {
+    background-color: #c64040;
+}
+
+.colorBlack {
+    background-color: #08090b;
+}
+
+.colorWhitePure {
+    background-color: #f0f0f0;
+}
+
+.colorOrange {
+    background-color: #d87c5a;
+}
+
+.colorGraphite {
+    background-color: #7f7f7f;
+}
+
+
+
+
+
+
+
+
+.green {
+	color: #43A047;
+}
+.selected {
+	border: 3px solid #D81B60;
+	padding: 5px;
+	margin: 2px 0px;
+	/*display: inline-block;*/
+}
+
+.button {
+	border-radius: 50px;
+	display: inline-block;
+	background-color: #1976D2;
+	text-decoration: none;
+	color: #FFF;
+	padding: 10px 25px;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.button:hover, .button:focus {
+	background-color: #2196F3;
+}
+
+.button:active  {
+	background-color: #0D47A1;
+	color: #BBDEFB;
+}
+
+.pinkColor {
+	color: #D81B60;
+}
+
+.test-box {
+	width: 400px;
+	display: block;
+	background-color: #8D6E63;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	padding: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.orangeBg {
+	background-color: #F57C00;
+}
+
+form {
+	/*background-color: #ECEFF1;*/
+	padding: 5px 20px;
+	margin-bottom: 35px;
+	display: block;
+	border: 5px solid #ECEFF1;
+}
+
+input[type="text"] {
+	border-radius: 4px;
+	width: 200px;
+	height: 24px;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 5px;
+	border: 2px solid #B0BEC5;
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="text"]:hover, input[type="text"]:focus, input[type="text"]:active {
+	outline: none;
+}
+
+.focus {
+	border: 2px solid #1565C0 !important;
+	box-shadow: 0px 1px 25px #64B5F6;
+}
+
+
+.sumResult {
+	color: #43A047;
+}
+
+
+.container {
+	width: 100%;
+}
+.container:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.left-side {
+	float: left;
+	width: 40%;
+}
+.right-side {
+	float: left;
+	width: 60%;
+	padding-left: 100px;
+}
+
+.row {
+	margin-bottom: 15px;
+}
+
+.row:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+.col-1-of-3 {
+	width: 33.3333333333333%;
+	float: left;
+}
+
+
+.model-summary {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background-color: rgba(17,126,209,0.05);
+	padding: 25px;
+	text-align: left;
+}
+.model-name {
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #03A9F4;
+}
+.model-specs {
+	font-size: 14px;
+	margin-bottom: 15px;
+	color: #607D8B;
+	max-width: 300px;
+	line-height: 1.5;
+}
+.model-price {
+	font-weight: bold;
+	font-size: 18px;
+	color: #8BC34A;
+	margin-bottom: 15px;
+}
